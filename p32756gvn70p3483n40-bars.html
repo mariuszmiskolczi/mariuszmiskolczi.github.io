@@ -1,0 +1,138 @@
+<!DOCTYPE html><html style="height: 100%">
+	<head><meta charset="UTF-8">
+<style>.portfolio__container-items{position:relative}.portfolio__container-items.hidden{visibility:hidden}.portfolio__container-items.no-items::after{content:var(--no-items-text);position:absolute;width:100%;display:flex;justify-content:center;margin-top:calc(var(--items-height)/2)}.portfolio__category-bar{font-family:var(--category-bar-font-family);font-size:var(--category-bar-font-size);font-weight:var(--category-bar-font-weight);font-style:var(--category-bar-font-style);background-color:var(--category-bar-background-color);padding:var(--category-bar-padding);box-shadow:var(--category-bar-shadow);border-top:var(--category-bar-border-top);border-right:var(--category-bar-border-right);border-bottom:var(--category-bar-border-bottom);border-left:var(--category-bar-border-left);border-radius:var(--category-bar-border-radius);margin-bottom:var(--margin-bars-bottom)}.portfolio__category-bar__nav{list-style:none;display:flex;justify-content:center;flex-wrap:wrap;margin:0;padding:0}.portfolio__category-bar__nav li{display:flex;margin:0 .5em}.portfolio__category-bar__nav li>a{padding:.5em 1em;text-decoration:none;color:var(--category-bar-item-idle-color)}.portfolio__category-bar__nav li>a:hover,.portfolio__category-bar__nav li>a.active{color:var(--category-bar-item-active-color);background:var(--category-bar-item-active-background-color)}.portfolio__search-bar{font-family:var(--search-bar-font-family);font-size:var(--search-bar-font-size);font-weight:var(--search-bar-font-weight);font-style:var(--search-bar-font-style);background-color:var(--search-bar-background-color);padding:var(--search-bar-padding);color:var(--search-bar-color);box-shadow:var(--search-bar-shadow);border-top:var(--search-bar-border-top);border-right:var(--search-bar-border-right);border-bottom:var(--search-bar-border-bottom);border-left:var(--search-bar-border-left);border-radius:var(--search-bar-border-radius);margin-bottom:var(--margin-bars-bottom);display:flex;justify-content:space-between;align-items:center}.portfolio__search-bar__search-field{width:15 .5em;position:relative;height:100%;max-width:40%}#imPage .portfolio__search-bar__search-field>input{box-sizing:border-box;font-size:inherit;font-family:inherit;background-color:rgba(255,255,255,0.8);color:var(--search-bar-color);border:1px solid var(--search-bar-color);padding:10px 40px 10px 5px;width:100%;outline:0;border-radius:0;box-shadow:none}.portfolio__search-bar__search-field__img{position:absolute;right:0;bottom:0;width:40px;height:100%;display:flex;justify-content:center;align-items:center}.portfolio__search-bar__search-field__img>svg{height:1.5em;max-height:30px;fill:var(--search-bar-color)}.portfolio__search-bar__sort-field{color:var(--search-bar-color);cursor:pointer;display:flex;align-items:center}.portfolio__search-bar__sort-field ul{list-style:none;padding:0;margin:0}.portfolio__search-bar__sort-field li{box-sizing:border-box;position:relative;display:flex}.portfolio__search-bar__sort-field__text>svg{fill:var(--search-bar-color);margin:0 0 0 .5em}.portfolio__search-bar__sort-field__text{padding:0 .6em;align-items:center;text-align:right}.portfolio__search-bar__sort-field__dropdown li{padding:.6em}.portfolio__search-bar__sort-field__dropdown ul{background-color:#fff;color:#282828;width:100%;position:absolute;z-index:99;overflow:hidden}.portfolio__search-bar__sort-field__dropdown ul{max-height:0;transition:max-height .1s ease-out}.portfolio__search-bar__sort-field__dropdown ul.open{max-height:9999px;border:1px solid var(--search-bar-color);transition:max-height 2s ease-in-out}.portfolio__card{color:var(--items-color);font-family:var(--items-font-family);font-size:var(--items-font-size);font-weight:var(--items-font-weight);font-style:var(--items-font-style);border-radius:var(--items-border-radius);position:absolute;display:flex}.portfolio__content{position:relative;width:100%;height:100%}.portfolio__content>img{display:block;object-fit:cover;width:100%;height:100%}.portfolio__card__bottom-bar{background-color:var(--items-background-color);position:absolute;bottom:0;left:0;width:100%;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;box-sizing:border-box;padding:5px 5px}.portfolio__card__bottom-bar>div{padding:5px 5px}.portfolio__card.showOverlay .portfolio__card__bottom-bar{opacity:0}.portfolio__card__bottom-bar__date{font-size:.8em}.portfolio__card__bottom-bar__title{white-space:nowrap;margin-right:30px}.portfolio__card__overlay{position:absolute;height:100%;width:100%;bottom:0;box-sizing:border-box;overflow:hidden}.portfolio__card__overlay__content{font-family:var(--items-overlay-description-font-family);font-size:var(--items-overlay-description-font-size);font-weight:var(--items-overlay-description-font-weight);font-style:var(--items-overlay-description-font-style);color:var(--items-overlay-description-color);background-color:var(--items-overlay-background-color);padding:var(--padding-overlay);position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;box-sizing:border-box;will-change:transform}.portfolio__card__overlay__title,.portfolio__card__overlay__description{padding-right:4px;padding-left:4px}.portfolio__card__overlay__title{font-size:1.2em;font-weight:bold}.portfolio__card__overlay__content>div{text-align:center;margin:3px 0;flex-shrink:0;overflow:hidden}.portfolio__card__overlay__content>div.portfolio__card__overlay__button{margin:4px 0}.portfolio__card__overlay__content>.portfolio__card__overlay__description{text-align:center;margin-bottom:10px;transition:flex .2s linear;flex-shrink:1}.portfolio__card__overlay__content>.portfolio__card__overlay__description:hover{flex-shrink:0}.portfolio__card__overlay a{color:inherit;text-decoration:none}.portfolio__card__overlay__button{font-family:var(--items-button-font-family);font-size:var(--items-button-font-size);font-weight:var(--items-button-font-weight);font-style:var(--items-button-font-style);color:var(--items-button-color);background-color:var(--items-button-background-color);border-top:var(--items-button-border-top);border-right:var(--items-button-border-right);border-bottom:var(--items-button-border-bottom);border-left:var(--items-button-border-left);border-radius:var(--items-button-border-radius);transition:background-color .5s ease}.portfolio__card__overlay__button>a{padding:var(--items-button-margin-ver) var(--items-button-margin-hor);display:inline-block}.portfolio__card__overlay__button:hover{background-color:var(--items-button-background-color-hover);cursor:pointer}.portfolio__container .portfolio__card{overflow:hidden}.portfolio__card .portfolio__card__overlay__content,.portfolio__card img{transition-delay:var(--effect-delay-out);transition-duration:var(--overlay-content-time-normal);transition-timing-function:ease-in-out}.portfolio__card.showOverlay .portfolio__card__overlay__content,.portfolio__card.showOverlay img{transition-delay:0ms}.portfolio__card img{transition-property:transform,filter}.portfolio__card.portfolio__card .portfolio__card__bottom-bar{opacity:1;transition-delay:var(--effect-delay-out);transition-property:opacity;transition-duration:var(--overlay-content-time-fast);transition-timing-function:ease-in-out}.portfolio__card.portfolio__card.showOverlay .portfolio__card__bottom-bar{transition-delay:0ms;opacity:0}.portfolio__card.overlay-effect-none .portfolio__card__overlay__content{opacity:0;transition-duration:0ms}.portfolio__card.showOverlay.overlay-effect-none .portfolio__card__overlay__content{opacity:1}.portfolio__card.overlay-effect-none .portfolio__card__bottom-bar{transition-duration:0ms}.portfolio__card.overlay-effect-none img{transition-property:transform,filter}.portfolio__card.overlay-effect-fade .portfolio__card__overlay__content{opacity:0;transition-property:opacity}.portfolio__card.showOverlay.overlay-effect-fade .portfolio__card__overlay__content{opacity:1}.portfolio__card.overlay-effect-follow .portfolio__card__overlay__content{--overlay-content-time-fast = 0;--effect-delay-out:0;transition-property:transform;transform:translate(-105%,-105%)}.portfolio__card.overlay-effect-appear-top .portfolio__card__overlay__content{transition-property:transform;transform:translateY(-105%)}.portfolio__card.showOverlay.overlay-effect-appear-top .portfolio__card__overlay__content{transform:translateY(0)}.portfolio__card.overlay-effect-appear-bottom .portfolio__card__overlay__content{transition-property:transform;transform:translateY(105%)}.portfolio__card.showOverlay.overlay-effect-appear-bottom .portfolio__card__overlay__content{transform:translateY(0)}.portfolio__card.overlay-effect-appear-left .portfolio__card__overlay__content{transition-property:transform;transform:translateX(-105%)}.portfolio__card.showOverlay.overlay-effect-appear-left .portfolio__card__overlay__content{transform:translateX(0)}.portfolio__card.overlay-effect-appear-right .portfolio__card__overlay__content{transition-property:transform;transform:translateX(105%)}.portfolio__card.showOverlay.overlay-effect-appear-right .portfolio__card__overlay__content{transform:translateX(0)}.portfolio__card.overlay-effect-appear-central .portfolio__card__overlay__content{transition-property:transform,opacity;transform:scale(0);opacity:0}.portfolio__card.showOverlay.overlay-effect-appear-central .portfolio__card__overlay__content{transform:scale(1);opacity:1}.portfolio__card.overlay-effect-appear-central-vertical .portfolio__card__overlay__content{transition-property:transform;transform:rotateX(90deg)}.portfolio__card.showOverlay.overlay-effect-appear-central-vertical .portfolio__card__overlay__content{transform:rotateX(0)}.portfolio__card.overlay-effect-appear-central-horizontal .portfolio__card__overlay__content{transition-property:transform;transform:rotateY(90deg)}.portfolio__card.showOverlay.overlay-effect-appear-central-horizontal .portfolio__card__overlay__content{transform:rotateY(0)}.portfolio__card.image-effect-zoom img{transform:scale(1)}.portfolio__card.image-effect-zoom.showOverlay img{transform:scale(1.2)}.portfolio__card.image-effect-rotate img{transform:rotate(0) scale(1)}.portfolio__card.image-effect-rotate.showOverlay img{transform:rotate(5deg) scale(1.25)}.portfolio__card.image-effect-blur img{filter:blur(0)}.portfolio__card.image-effect-blur.showOverlay img{filter:blur(3px)}.portfolio__card.image-effect-gray img{filter:grayscale(0)}.portfolio__card.image-effect-gray.showOverlay img{filter:grayscale(100%)}#imObjectPortfolio_13_03 {
+  box-sizing: border-box;
+  width: 100%;
+}
+#imObjectPortfolio_13_03 > .portfolio {
+  --desktop-width: ;
+
+  --category-bar-font-family: Tahoma;
+  --category-bar-font-size: 11pt;
+  --category-bar-font-weight: normal;
+  --category-bar-font-style: normal;
+  --category-bar-background-color: rgba(255, 255, 255, 1);
+  --category-bar-padding: 10px 10px;
+  --category-bar-border-top: 1px solid rgba(0, 0, 0, 1);
+  --category-bar-border-left: 1px solid rgba(0, 0, 0, 1);
+  --category-bar-border-right: 1px solid rgba(0, 0, 0, 1);
+  --category-bar-border-bottom: 1px solid rgba(0, 0, 0, 1);
+  --category-bar-border-radius: 0px 0px 0px 0px;
+  --category-bar-item-idle-color: rgba(0, 0, 0, 1);
+  --category-bar-item-active-background-color: rgba(128, 128, 128, 1);
+  --category-bar-item-active-color: rgba(255, 255, 255, 1);
+
+  --search-bar-font-family: Tahoma;
+  --search-bar-font-size: 10pt;
+  --search-bar-font-weight: normal;
+  --search-bar-font-style: normal;
+  --search-bar-background-color: transparent;
+  --search-bar-padding: 0px 0px;
+  --search-bar-color: rgba(0, 0, 0, 1);
+  --search-bar-border-top: 0px solid rgba(0, 0, 0, 1);
+  --search-bar-border-left: 0px solid rgba(0, 0, 0, 1);
+  --search-bar-border-right: 0px solid rgba(0, 0, 0, 1);
+  --search-bar-border-bottom: 0px solid rgba(0, 0, 0, 1);
+  --search-bar-border-radius: 0px 0px 0px 0px;
+
+  --items-margin-ver: 10px;
+  --items-margin-hor: 10px;
+  --items-background-color: rgba(0, 0, 0, 0.75);
+  --items-color: rgba(255, 255, 255, 1);
+  --items-font-family: Tahoma;
+  --items-font-size: 11pt;
+  --items-font-weight: normal;
+  --items-font-style: normal;
+  --items-border-radius: 3px 3px 3px 3px;
+  --items-overlay-background-color: rgba(0, 0, 0, 0.75);
+  --items-overlay-description-font-family: Tahoma;
+  --items-overlay-description-font-size: 13pt;
+  --items-overlay-description-font-weight: normal;
+  --items-overlay-description-font-style: normal;
+  --items-overlay-description-color: rgba(255, 255, 255, 1);
+
+  --items-button-font-family: Tahoma;
+  --items-button-font-size: 11pt;
+  --items-button-font-weight: normal;
+  --items-button-font-style: normal;
+  --items-button-background-color: transparent;
+  --items-button-background-color-hover: transparent;
+  --items-button-color: rgba(255, 255, 255, 1);
+  --items-button-border-top: 1px solid rgba(255, 255, 255, 1);
+  --items-button-border-left: 1px solid rgba(255, 255, 255, 1);
+  --items-button-border-right: 1px solid rgba(255, 255, 255, 1);
+  --items-button-border-bottom: 1px solid rgba(255, 255, 255, 1);
+  --items-button-border-radius: 3px 3px 3px 3px;
+  --items-button-margin-ver: 8px;
+  --items-button-margin-hor: 20px;
+
+  --items-height: 200px;
+  --items-width: 400px;
+
+  --overlay-content-time-normal: 500ms;
+  --overlay-content-time-fast: 300ms;
+  --effect-delay-out: 300ms;
+
+  --margin-bars-bottom: 10px;
+  --padding-overlay: 15px 15%;
+  --no-items-text: "Nincs tal&#225;lat";
+}
+@media(min-width: 1150px) {
+    #imObjectPortfolio_13_03 .portfolio__container-items {
+      height: 250px;
+    }
+}
+@media(min-width: 720px) {
+  @media(max-width: 1149.9px) {
+    #imObjectPortfolio_13_03 .portfolio__container-items {
+      height: 250px;
+    }
+  }
+}
+@media(min-width: 480px) {
+  @media(max-width: 719.9px) {
+    #imObjectPortfolio_13_03 .portfolio__container-items {
+      height: 510px;
+    }
+  }
+}
+  @media(max-width: 479.9px) {
+    #imObjectPortfolio_13_03 .portfolio__container-items {
+      height: 510px;
+    }
+  }
+#imPage{flex-basis:100%;}#mouse-trap{position:absolute;top:0;bottom:0;left:0;right:0;}</style>	</head>
+	<body style="margin: 0; padding: 0; background-color: White; height: 100%; display: flex; align-items: center;">
+<body><div id="imPage"><div id="imObjectPortfolio_13_03"><div class="portfolio"><div class="portfolio__container">  <div class="portfolio__category-bar">
+    <ul class="portfolio__category-bar__nav">
+      <li><a data-category-id="*" href="#">&#214;sszes kateg&#243;ria</a></li>
+      <li><a data-category-id="cat_1" href="#">Kateg&#243;ria 1</a></li>
+      <li><a data-category-id="cat_2" href="#">Kateg&#243;ria 2</a></li>
+      <li><a data-category-id="cat_3" href="#">Kateg&#243;ria 3</a></li>
+    </ul>
+  </div>
+  <div class="portfolio__search-bar">
+      <div class="portfolio__search-bar__search-field">
+        <input type="text" placeholder="Keres&#233;s...">
+        <div class="portfolio__search-bar__search-field__img">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 250.313 250.313" xml:space="preserve"><g><path style="fill-rule:evenodd;clip-rule:evenodd;" d="M244.186,214.604l-54.379-54.378c-0.289-0.289-0.628-0.491-0.93-0.76 c10.7-16.231,16.945-35.66,16.945-56.554C205.822,46.075,159.747,0,102.911,0S0,46.075,0,102.911	c0,56.835,46.074,102.911,102.91,102.911c20.895,0,40.323-6.245,56.554-16.945c0.269,0.301,0.47,0.64,0.759,0.929l54.38,54.38	c8.169,8.168,21.413,8.168,29.583,0C252.354,236.017,252.354,222.773,244.186,214.604z M102.911,170.146	c-37.134,0-67.236-30.102-67.236-67.235c0-37.134,30.103-67.236,67.236-67.236c37.132,0,67.235,30.103,67.235,67.236 C170.146,140.044,140.043,170.146,102.911,170.146z"></path></g></svg>
+        </div>
+      </div>
+    <div class="portfolio__search-bar__sort-field">
+          <ul>
+            <li class="portfolio__search-bar__sort-field__text">
+              <div>Order by: <span>Default</span></div>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="11.97px" height="11.97px" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 240.811 240.811" xml:space="preserve"><g><path d="M220.088,57.667l-99.671,99.695L20.746,57.655c-4.752-4.752-12.439-4.752-17.191,0 c-4.74,4.752-4.74,12.451,0,17.203l108.261,108.297l0,0l0,0c4.74,4.752,12.439,4.752,17.179,0L237.256,74.859 c4.74-4.752,4.74-12.463,0-17.215C232.528,52.915,224.828,52.915,220.088,57.667z"></path></g></svg>
+            </li>
+            <li class="portfolio__search-bar__sort-field__dropdown">
+              <ul>
+                <li data-value="default">Default</li>
+                <li data-value="date_desc">Most recent</li>
+                <li data-value="date_asc">Least recent</li>
+                <li data-value="title">Title</li>
+              </ul>
+            </li>
+          </ul>
+    </div>
+  </div>
+<div id="mouse-trap"></div></div></div><div></div><script>document.querySelector('.portfolio__category-bar__nav li:first-child a').classList.toggle('active')</script></body><html>

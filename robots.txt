@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin
+Disallow: /captcha
+Disallow: /imemail
+
+Sitemap: https://trial-5235.websitex5.me/sitemap.xml
